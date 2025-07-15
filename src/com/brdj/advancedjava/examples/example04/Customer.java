@@ -11,4 +11,9 @@ public record Customer(long id, String name, String email) {
     public int hashCode() {
         return Long.hashCode(id);
     }
+
+    @Override
+    public String toString() {
+        return "[" +id + "] " + name;
+    }
 }
