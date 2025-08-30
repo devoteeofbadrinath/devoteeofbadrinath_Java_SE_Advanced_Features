@@ -2,7 +2,7 @@ package com.brdj.advancedjava.examples.example01;
 
 import java.util.Objects;
 
-public final class ProductCls {
+public class ProductCls {
 
     private final long id;
     private final String name;
@@ -29,7 +29,7 @@ public final class ProductCls {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if ( o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         ProductCls that = (ProductCls) o;
         return id == that.id && Objects.equals(name, that.name) && Objects.equals(description, that.description);
     }
@@ -43,10 +43,8 @@ public final class ProductCls {
     public String toString() {
         return "ProductCls{" +
                 "id=" + id +
-                ", name=" + name + '\'' +
+                ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
-
-
 }
