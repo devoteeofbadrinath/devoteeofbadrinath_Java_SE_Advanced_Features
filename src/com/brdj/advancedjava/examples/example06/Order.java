@@ -7,16 +7,13 @@ import static com.brdj.advancedjava.examples.example05.Validation.checkThat;
 
 public record Order(long id, Customer customer, LocalDateTime dateTime, List<OrderLine> lines) {
 
-    public Order() {
+    public Order {
 
         checkThat(customer != null, "customer must not be null");
         checkThat(dateTime != null, "dateTime must not be null");
         checkThat(lines != null && !lines.isEmpty(), "lines must not be null or empty");
 
-        this.id = id;
-        this.customer = customer;
-        this.dateTime = dateTime;
-        this.lines = List.copyOf(lines);
+        lines = List.copyOf(lines);
     }
 
     // Rules:
