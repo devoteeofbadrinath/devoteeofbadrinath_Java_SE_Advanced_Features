@@ -19,7 +19,8 @@ public class RecordsExample07 {
         var order = new Order(200201L, customer, LocalDateTime.now(), lines);
 
         var orderLine = new OrderLine(new Product(100892L, "Bananas", "Yellow Bananas"), 1, new BigDecimal("0.99"));
-        order.lines().add(orderLine);
+        lines.add(orderLine);
+        // order.lines().add(orderLine);
         System.out.println(order);
     }
 }
