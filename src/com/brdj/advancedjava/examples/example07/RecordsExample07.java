@@ -1,10 +1,10 @@
-package com.brdj.advancedjava.examples.example06;
+package com.brdj.advancedjava.examples.example07;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class RecordsExample05 {
+public class RecordsExample07 {
 
     public static void main(String[] args) {
         var product1 = new Product(100123L, "Apples", "Tasty red apples");

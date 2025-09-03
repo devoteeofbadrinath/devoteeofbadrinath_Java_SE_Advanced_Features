@@ -1,9 +1,12 @@
-package com.brdj.advancedjava.examples.example07;
+package com.brdj.advancedjava.examples;
 
 /**
  * Utility method for validation, used in the examples.
  */
-public class Validation {
+/**
+ * Utility method for validation, used in the examples.
+ */
+public final class Validation {
 
     private Validation() {
     }
@@ -14,3 +17,4 @@ public class Validation {
         }
     }
 }
+

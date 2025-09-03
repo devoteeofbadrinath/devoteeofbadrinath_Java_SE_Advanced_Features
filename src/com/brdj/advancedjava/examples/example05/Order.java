@@ -2,7 +2,7 @@ package com.brdj.advancedjava.examples.example05;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import static com.brdj.advancedjava.examples.example05.Validation.checkThat;
+import static com.brdj.advancedjava.examples.Validation.checkThat;
 
 public record Order(long id, Customer customer, LocalDateTime dateTime, List<OrderLine> lines) {
 

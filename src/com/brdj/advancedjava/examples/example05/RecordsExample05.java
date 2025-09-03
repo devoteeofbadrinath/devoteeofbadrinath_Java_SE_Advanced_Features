@@ -16,10 +16,11 @@ public class RecordsExample05 {
         lines.add(new OrderLine(product1, 6, new BigDecimal("5.94")));
         lines.add(new OrderLine(product2, 3, new BigDecimal("2.50")));
 
-        var order = new Order(200201L, customer, LocalDateTime.now(), lines);
+        var order = new Order(200201L, customer, null, lines);
 
         var orderLine = new OrderLine(new Product(100892L, "Bananas", "Yellow Bananas"), 1, new BigDecimal("0.99"));
-        order.lines().add(orderLine);
+        lines.add(orderLine);
+        //order.lines().add(orderLine);
         System.out.println(order);
     }
 }

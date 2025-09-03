@@ -1,6 +1,6 @@
 package com.brdj.advancedjava.examples.example07;
 
-import static com.brdj.advancedjava.examples.example07.Validation.checkThat;
+import static com.brdj.advancedjava.examples.Validation.checkThat;
 
 public record Product(long id, String name, String description) {
 

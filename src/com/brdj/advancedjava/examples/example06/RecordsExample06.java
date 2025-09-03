@@ -1,10 +1,10 @@
-package com.brdj.advancedjava.examples.example07;
+package com.brdj.advancedjava.examples.example06;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class RecordsExample05 {
+public class RecordsExample06 {
 
     public static void main(String[] args) {
         var product1 = new Product(100123L, "Apples", "Tasty red apples");
@@ -19,7 +19,8 @@ public class RecordsExample05 {
         var order = new Order(200201L, customer, LocalDateTime.now(), lines);
 
         var orderLine = new OrderLine(new Product(100892L, "Bananas", "Yellow Bananas"), 1, new BigDecimal("0.99"));
-        order.lines().add(orderLine);
+        lines.add(orderLine);
+        //order.lines().add(orderLine);
         System.out.println(order);
     }
 }
